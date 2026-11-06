@@ -1,0 +1,32 @@
+record_id,image_file,category,confidence,review_status
+A001,image_001.svg,Person,0.96,Approved
+A002,image_002.svg,Vehicle,0.91,Approved
+A003,image_003.svg,Animal,0.88,Approved
+A004,image_004.svg,Food,0.94,Approved
+A005,image_005.svg,Electronic Device,0.89,Approved
+A006,image_006.svg,Person,0.92,Approved
+A007,image_007.svg,Vehicle,0.87,Approved
+A008,image_008.svg,Animal,0.95,Approved
+A009,image_009.svg,Food,0.83,Needs Review
+A010,image_010.svg,Electronic Device,0.90,Approved
+A011,image_011.svg,Person,0.97,Approved
+A012,image_012.svg,Vehicle,0.93,Approved
+A013,image_013.svg,vehicle,0.86,Approved
+A014,image_014.svg,Animal,0.91,Approved
+A015,image_015.svg,Food,0.78,Needs Review
+A016,image_016.svg,Electronic Device,0.96,Approved
+A017,image_017.svg,Person,,Approved
+A018,image_018.svg,Vehicle,0.89,Approved
+A019,image_019.svg,Animal,0.94,Approved
+A020,image_020.svg,Food,0.90,Approved
+A021,image_021.svg,Electronic Device,1.08,Approved
+A022,image_022.svg,Person,0.88,Approved
+A023,image_023.svg,Vehicle,0.92,Approved
+A024,image_024.svg,Animal,0.93,Approved
+A025,image_025.svg,Food,0.85,Approved
+A026,image_026.svg,Electronic Device,0.91,Approved
+A027,image_027.svg,Person,0.95,Approved
+A028,image_028.svg,Vehicle,0.90,Approved
+A029,image_029.svg,Animal,0.87,Approved
+A030,image_030.svg,Food,0.89,Approved
+A031,image_030.svg,Food,0.89,Approved
