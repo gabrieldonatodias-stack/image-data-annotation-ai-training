@@ -1,31 +1,31 @@
 image_id,image_filename,category,object_description,confidence,qc_status,notes
-IMG_001,image_001.jpg,Vehicle,Passenger car,High,Approved,Clear primary subject
-IMG_002,image_002.jpg,Animal,Domestic dog,High,Approved,Clear animal subject
-IMG_003,image_003.jpg,Electronic Device,Smartphone,High,Approved,Device clearly identifiable
-IMG_004,image_004.jpg,Food,Pizza,High,Approved,Food item clearly identifiable
-IMG_005,image_005.jpg,Person,Human subject,High,Approved,Primary subject clearly visible
-IMG_006,image_006.jpg,Vehicle,Bicycle,High,Approved,Clear transportation object
-IMG_007,image_007.jpg,Animal,Domestic cat,High,Approved,Clear animal subject
-IMG_008,image_008.jpg,Electronic Device,Laptop computer,High,Approved,Device clearly identifiable
-IMG_009,image_009.jpg,Food,Fruit,Medium,Approved,Category identifiable
-IMG_010,image_010.jpg,Person,Human subject,Medium,Approved,Subject partially visible
-IMG_011,image_011.jpg,Vehicle,Motorcycle,High,Approved,Clear transportation object
-IMG_012,image_012.jpg,Animal,Bird,High,Approved,Clear animal subject
-IMG_013,image_013.jpg,Electronic Device,Tablet,High,Approved,Device clearly identifiable
-IMG_014,image_014.jpg,Food,Sandwich,High,Approved,Food item clearly identifiable
-IMG_015,image_015.jpg,Person,Human subject,High,Approved,Clear primary subject
-IMG_016,image_016.jpg,Vehicle,Bus,High,Approved,Clear transportation object
-IMG_017,image_017.jpg,Animal,Horse,High,Approved,Clear animal subject
-IMG_018,image_018.jpg,Electronic Device,Computer monitor,High,Approved,Device clearly identifiable
-IMG_019,image_019.jpg,Food,Meal,Medium,Needs Review,Multiple food items visible
-IMG_020,image_020.jpg,Person,Human subject,Low,Needs Review,Subject visibility is limited
-IMG_021,image_021.jpg,Vehicle,Truck,High,Approved,Clear transportation object
-IMG_022,image_022.jpg,Animal,Dog,High,Approved,Clear animal subject
-IMG_023,image_023.jpg,Electronic Device,Camera,High,Approved,Device clearly identifiable
-IMG_024,image_024.jpg,Food,Dessert,Medium,Approved,Food item identifiable
-IMG_025,image_025.jpg,Person,Human subject,High,Approved,Clear primary subject
-IMG_026,image_026.jpg,Vehicle,Car,High,Approved,Clear transportation object
-IMG_027,image_027.jpg,Animal,Cat,High,Approved,Clear animal subject
-IMG_028,image_028.jpg,Electronic Device,Smartphone,High,Approved,Device clearly identifiable
-IMG_029,image_029.jpg,Food,Meal,High,Approved,Primary food item identifiable
-IMG_030,image_030.jpg,Person,Human subject,High,Approved,Clear primary subject
+IMG_001,image_001.svg,Vehicle,Passenger car,High,Approved,Clear primary subject
+IMG_002,image_002.svg,Animal,Domestic dog,High,Approved,Clear animal subject
+IMG_003,image_003.svg,Electronic Device,Smartphone,High,Approved,Device clearly identifiable
+IMG_004,image_004.svg,Food,Pizza,High,Approved,Food item clearly identifiable
+IMG_005,image_005.svg,Person,Human subject,High,Approved,Primary subject clearly visible
+IMG_006,image_006.svg,Vehicle,Bicycle,High,Approved,Clear transportation object
+IMG_007,image_007.svg,Animal,Domestic cat,High,Approved,Clear animal subject
+IMG_008,image_008.svg,Electronic Device,Laptop computer,High,Approved,Device clearly identifiable
+IMG_009,image_009.svg,Food,Fruit,Medium,Approved,Category identifiable
+IMG_010,image_010.svg,Person,Human subject,Medium,Approved,Subject partially represented
+IMG_011,image_011.svg,Vehicle,Motorcycle,High,Approved,Clear transportation object
+IMG_012,image_012.svg,Animal,Bird,High,Approved,Clear animal subject
+IMG_013,image_013.svg,Electronic Device,Tablet,High,Approved,Device clearly identifiable
+IMG_014,image_014.svg,Food,Sandwich,High,Approved,Food item clearly identifiable
+IMG_015,image_015.svg,Person,Human subject,High,Approved,Clear primary subject
+IMG_016,image_016.svg,Vehicle,Bus,High,Approved,Clear transportation object
+IMG_017,image_017.svg,Animal,Horse,High,Approved,Clear animal subject
+IMG_018,image_018.svg,Electronic Device,Computer monitor,High,Approved,Device clearly identifiable
+IMG_019,image_019.svg,Food,Meal,Medium,Needs Review,Multiple food items represented
+IMG_020,image_020.svg,Person,Human subject,Low,Needs Review,Subject representation is ambiguous
+IMG_021,image_021.svg,Vehicle,Truck,High,Approved,Clear transportation object
+IMG_022,image_022.svg,Animal,Dog,High,Approved,Clear animal subject
+IMG_023,image_023.svg,Electronic Device,Camera,High,Approved,Device clearly identifiable
+IMG_024,image_024.svg,Food,Dessert,Medium,Approved,Food item identifiable
+IMG_025,image_025.svg,Person,Human subject,High,Approved,Clear primary subject
+IMG_026,image_026.svg,Vehicle,Car,High,Approved,Clear transportation object
+IMG_027,image_027.svg,Animal,Cat,High,Approved,Clear animal subject
+IMG_028,image_028.svg,Electronic Device,Smartphone,High,Approved,Device clearly identifiable
+IMG_029,image_029.svg,Food,Meal,High,Approved,Primary food item identifiable
+IMG_030,image_030.svg,Person,Human subject,High,Approved,Clear primary subject
