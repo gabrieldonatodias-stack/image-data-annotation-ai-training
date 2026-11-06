@@ -1,10 +1,17 @@
-# Image Data Annotation for AI Training
+# AI Data Annotation & Automation Portfolio
 
-## Project Overview
+## Overview
 
-Independent portfolio project demonstrating an image data annotation workflow for Artificial Intelligence training.
+This repository contains independent portfolio projects designed to demonstrate practical skills in AI data work, model evaluation, data quality, Python validation, and workflow automation with n8n.
 
-Skills demonstrated:
+All examples use synthetic or demonstration data and contain no confidential employer or client information.
+
+## Projects
+
+### 1. Image Data Annotation for AI Training
+
+Demonstrates:
+
 - Image classification
 - Data labeling
 - Annotation guidelines
@@ -12,77 +19,66 @@ Skills demonstrated:
 - Quality control
 - Documentation
 
-This repository uses demonstration data and contains no confidential employer or client information.
+Folder: image annotation files, guidelines, dataset and quality-control documentation.
 
-## Objective
+### 2. AI Response Evaluation & Quality Assessment
 
-Simulate a real-world workflow in which visual information is converted into structured labels for AI training and evaluation.
+Simulates the evaluation of AI-generated responses using a structured rubric.
 
-## Annotation Categories
+Demonstrates:
 
-| Category | Description |
-|---|---|
-| Vehicle | Cars, motorcycles, bicycles, buses and similar transportation objects |
-| Animal | Dogs, cats, birds and other animals |
-| Person | Human subjects visible in the image |
-| Food | Food items and meals |
-| Electronic Device | Phones, computers, tablets and similar devices |
+- Accuracy evaluation
+- Relevance evaluation
+- Clarity assessment
+- Instruction following
+- Completeness
+- Written evaluator feedback
+- Consistent scoring
 
-## Workflow
+Folder: ai-evaluation/
 
-1. Review the image.
-2. Identify the relevant object or category.
-3. Apply the predefined annotation rule.
-4. Record the annotation in CSV format.
-5. Perform quality control.
-6. Correct inconsistent or ambiguous labels.
-7. Document the final dataset.
+### 3. AI Data Quality & Validation with Python
 
-## Dataset
+Demonstrates automated validation of an AI annotation dataset.
 
-The dataset/annotations.csv file contains 30 structured annotation records. The images/ directory contains 30 synthetic SVG visual samples created specifically for this portfolio project, allowing each annotation record to be connected to a visual example.
+The Python workflow checks:
 
-Each record includes:
-- Image ID
-- Image filename
-- Category
-- Object description
-- Annotation confidence
-- Quality-control status
-- Notes
+- Missing values
+- Duplicate records
+- Invalid categories
+- Invalid confidence scores
+- Review status
+- Category distribution
 
-## Quality Control
+Folder: data-quality-python/
 
-The quality-control process checks:
-- Category accuracy
-- Consistent labeling
-- Required fields
-- Ambiguous cases
-- Confidence level
-- Final review status
+### 4. AI Data Evaluation Automation with n8n
 
-See quality_control.md for the review methodology.
+Demonstrates a visual automation workflow that receives AI evaluation data through a webhook, validates the payload, calculates a quality score, and routes the result to PASS or human REVIEW.
 
-## Skills Demonstrated
+Demonstrates:
 
-- Data annotation
-- Data labeling
-- Dataset organization
-- Data quality control
-- Attention to detail
-- Analytical thinking
-- Following structured guidelines
-- Documentation
-- Quality assurance
+- n8n workflow design
+- Webhooks
+- JSON data handling
+- Conditional logic
+- Automated validation
+- Quality scoring
+- Error/review routing
 
-## Portfolio Relevance
+Folder: n8n-ai-automation/
 
-This project demonstrates skills relevant to:
-- AI Data Annotation
-- AI Training
-- Data Quality
-- AI Evaluation
-- Machine Learning Data Preparation
+## Skills demonstrated across the portfolio
+
+AI Data Annotation | AI Evaluation | Data Quality | Python | Pandas | Quality Assurance | Workflow Automation | n8n | Structured Data | Documentation | Analytical Thinking
+
+## Portfolio progression
+
+The projects intentionally follow a practical progression:
+
+Image Annotation → AI Evaluation → Data Quality + Python → n8n Automation
+
+This progression demonstrates the ability to work with AI data manually, evaluate model outputs, automate quality checks, and build repeatable workflows.
 
 ## Author
 
