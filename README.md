@@ -40,7 +40,7 @@ Simulate a real-world workflow in which visual information is converted into str
 
 ## Dataset
 
-The dataset/annotations.csv file contains 30 structured demonstration annotation records.
+The dataset/annotations.csv file contains 30 structured annotation records. The images/ directory contains 30 synthetic SVG visual samples created specifically for this portfolio project, allowing each annotation record to be connected to a visual example.
 
 Each record includes:
 - Image ID
