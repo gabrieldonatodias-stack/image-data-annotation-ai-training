@@ -1,0 +1,101 @@
+{
+  "name": "AI Data Evaluation Quality Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ai-evaluation-quality",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook-001",
+      "name": "Receive AI Evaluation",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [260, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const required = ['evaluation_id','accuracy','relevance','clarity','instruction_following','completeness'];\nconst data = $json.body ?? $json;\nconst missing = required.filter((field) => data[field] === undefined || data[field] === null || data[field] === '');\nconst scoreFields = required.slice(1);\nconst invalidScores = scoreFields.filter((field) => { const n = Number(data[field]); return !Number.isFinite(n) || n < 1 || n > 5; });\nconst values = scoreFields.map((field) => Number(data[field]));\nconst overallScore = invalidScores.length === 0 ? Number((values.reduce((a,b) => a + b, 0) / values.length).toFixed(2)) : null;\nconst valid = missing.length === 0 && invalidScores.length === 0;\nreturn [{ json: { evaluation_id: data.evaluation_id ?? null, valid, missing_fields: missing, invalid_scores: invalidScores, overall_score: overallScore, quality_status: valid && overallScore >= 3.5 ? 'PASS' : 'REVIEW', received_at: new Date().toISOString() } }];"
+      },
+      "id": "code-001",
+      "name": "Validate & Score",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [520, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "condition-001",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "if-001",
+      "name": "Quality Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [780, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { status: $json.quality_status, evaluation_id: $json.evaluation_id, overall_score: $json.overall_score, message: 'Evaluation passed automated validation.' } }}",
+        "options": {}
+      },
+      "id": "respond-valid-001",
+      "name": "Return Valid Result",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [1040, 220]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { status: 'REVIEW', evaluation_id: $json.evaluation_id, missing_fields: $json.missing_fields, invalid_scores: $json.invalid_scores, overall_score: $json.overall_score, message: 'Evaluation requires human review.' } }}",
+        "options": {}
+      },
+      "id": "respond-review-001",
+      "name": "Return Review Result",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [1040, 380]
+    }
+  ],
+  "connections": {
+    "Receive AI Evaluation": {
+      "main": [[{"node": "Validate & Score", "type": "main", "index": 0}]]
+    },
+    "Validate & Score": {
+      "main": [[{"node": "Quality Check", "type": "main", "index": 0}]]
+    },
+    "Quality Check": {
+      "main": [
+        [{"node": "Return Valid Result", "type": "main", "index": 0}],
+        [{"node": "Return Review Result", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "versionId": "portfolio-ai-evaluation-v1"
+}
