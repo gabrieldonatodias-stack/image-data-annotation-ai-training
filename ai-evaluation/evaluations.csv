@@ -1,0 +1,11 @@
+evaluation_id,prompt_id,response_id,accuracy,relevance,clarity,instruction_following,completeness,overall_score,decision,evaluator_feedback
+EVAL_001,P001,A,5,5,5,5,4,5,Preferred,Directly answers the question and follows the requested format. Minor opportunity for additional context.
+EVAL_002,P001,B,3,5,4,5,3,4,Not Preferred,Relevant response but contains an unsupported factual claim that reduces accuracy.
+EVAL_003,P002,A,4,5,5,4,5,5,Preferred,Clear and complete response with strong adherence to the requested constraints.
+EVAL_004,P002,B,5,3,4,3,3,4,Not Preferred,Information is mostly correct but includes unnecessary content and misses part of the requested scope.
+EVAL_005,P003,A,5,4,5,5,5,5,Preferred,Accurate and well-structured answer that follows the user's instructions.
+EVAL_006,P003,B,2,4,3,4,2,3,Not Preferred,Contains a significant accuracy issue and provides incomplete reasoning.
+EVAL_007,P004,A,4,5,4,5,4,4,Preferred,Useful and relevant response with a small clarity issue.
+EVAL_008,P004,B,4,3,5,3,3,3,Not Preferred,Well written but does not fully follow the requested constraints.
+EVAL_009,P005,A,5,5,5,5,5,5,Preferred,Strong response across all evaluation dimensions.
+EVAL_010,P005,B,3,4,4,4,3,4,Not Preferred,Generally useful but less complete and less accurate than Response A.
